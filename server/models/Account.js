@@ -45,7 +45,7 @@ AccountSchema.statics.toAPI = (doc) => ({
   _id: doc._id,
 });
 
-// Helper function to hash a password
+// Helper function toChore - Add missing Eslint dependencies & restructured dir tree.  hash a password
 AccountSchema.statics.generateHash = (password) => bcrypt.hash(password, saltRounds);
 
 /* Helper function for authenticating a password against one already in the
