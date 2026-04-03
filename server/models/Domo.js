@@ -6,24 +6,24 @@ const setName = (name) => _.escape(name).trim();
 
 const DomoSchema = new mongoose.Schema({
     name: {
-        type:String,
+        type: String,
         required: true,
         trim: true,
         set: setName
     },
-    age:{
-        type:Number,
-        min:0,
-        required:true
+    age: {
+        type: Number,
+        min: 0,
+        required: true
     },
-    owner:{
+    owner: {
         type: mongoose.Schema.ObjectId,
-        required:true,
+        required: true,
         ref: 'Account'
     },
     createdAt:
     {
-        type:Date,
+        type: Date,
         default: Date.now
     }
 });
