@@ -61,6 +61,6 @@ redisClient.connect().then(() => {
             throw err;
         }
         console.log(`Listening on port ${port}`);
-    })
+    });
 })
 
